@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hacker News Clone</title>
+    <!-- import javascript variables and functions -->
+    <script src="app.js" defer></script>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="https://news.ycombinator.com/y18.gif"> 
+  </head>
+
+  <!-- page content goes into <body> -->
+  <body>
+    <nav>
+      <div class="container">
+        <div class="navbar">
+          <ul id="navlist">
+            <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Y_Combinator_logo.svg/2048px-Y_Combinator_logo.svg.png" alt="logo"/>
+            <li><h3 id="name" style="color:black">Hacker News</h3></li>
+            <img class="dividers" src="https://www.pngall.com/wp-content/uploads/5/Vertical-Line-PNG-High-Quality-Image.png" alt="divider"/>
+            <li><a id="section2" href="#two">new</a></li>
+            <img class="dividers" src="https://www.pngall.com/wp-content/uploads/5/Vertical-Line-PNG-High-Quality-Image.png" alt="divider"/>
+            <li><a id="section3" href="#three">past</a></li>
+            <img class="dividers" src="https://www.pngall.com/wp-content/uploads/5/Vertical-Line-PNG-High-Quality-Image.png" alt="divider"/>
+            <li><a id="section4" href="#four">comments</a></li>
+            <img class="dividers" src="https://www.pngall.com/wp-content/uploads/5/Vertical-Line-PNG-High-Quality-Image.png" alt="divider"/>
+            <li><a id="section5" href="#five">ask</a></li>
+            <img class="dividers" src="https://www.pngall.com/wp-content/uploads/5/Vertical-Line-PNG-High-Quality-Image.png" alt="divider"/>
+            <li><a id="section6" href="#six">show</a></li>
+            <img class="dividers" src="https://www.pngall.com/wp-content/uploads/5/Vertical-Line-PNG-High-Quality-Image.png" alt="divider"/>
+            <li><a id="section7" href="#seven">jobs</a></li>
+            <img class="dividers" src="https://www.pngall.com/wp-content/uploads/5/Vertical-Line-PNG-High-Quality-Image.png" alt="divider"/>
+            <li><a id="section8" href="#eight">submit</a></li>
+          </ul>
+          <button id="login" type="button">login</button>
+        </div>
+      </div>
+   </nav>
+    <div class="firstpost">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">42</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">USB Drives on Amazon Are a Scam (kurtisknodel.com)
+        </p>
+        <p class="publishertime">by coolcat12 5 hours ago</p>
+      </div>
+      <div class="commentsection">
+        <p class="numcomments">71&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="post">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">22</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">A Cheap 2.5GbE PoE Unmanaged Switch (servethehome.com)
+        </p>
+        <p class="publishertime">by user213214 17 hours ago</p>
+      </div>
+      <div class="comments">
+        <p class="numcomments">12&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="post">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">71</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">Intel Demo High-Performance RISC-V on Intel 4 (wikichip.org)
+        </p>
+        <p class="publishertime">by thisguy723 14 hours ago</p>
+      </div>
+      <div class="comments">
+        <p class="numcomments">17&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="post">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">41</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">My Favourite Computer, an Old Mac (muezza.ca)
+        </p>
+        <p class="publishertime">by coatgirl324 21 hours ago</p>
+      </div>
+      <div class="comments">
+        <p class="numcomments">81&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="post">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">72</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">USB Drives on Amazon Are a Scam (kurtisknodel.com)
+        </p>
+        <p class="publishertime">by cplusplusperson 3 hours ago</p>
+      </div>
+      <div class="comments">
+        <p class="numcomments">90&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="post">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">41</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">Lufthansa bans AirTags in checked luggage (onemileatatime.com)
+        </p>
+        <p class="publishertime">by will123 2 hours ago</p>
+      </div>
+      <div class="comments">
+        <p class="numcomments">10&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="post">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">88</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">4x4 ASCII Font (2016) (simplifier.neocities.org)
+        </p>
+        <p class="publishertime">by candoitnow 13 hours ago</p>
+      </div>
+      <div class="comments">
+        <p class="numcomments">19&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="post">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">52</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">Lufthansa bans AirTags in checked luggage (onemileatatime.com)
+        </p>
+        <p class="publishertime">by coolcat12 5 hours ago</p>
+      </div>
+      <div class="comments">
+        <p class="numcomments">54&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="post">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">64</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">USB Drives on Amazon Are a Scam (kurtisknodel.com)
+        </p>
+        <p class="publishertime">by coolcat12 5 hours ago</p>
+      </div>
+      <div class="comments">
+        <p class="numcomments">82&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="post">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">57</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">My Favourite Computer, an Old Mac (muezza.ca)
+        </p>
+        <p class="publishertime">by howmanycan1 5 hours ago</p>
+      </div>
+      <div class="comments">
+        <p class="numcomments">46&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="post">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">23</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">A Cheap 2.5GbE PoE Unmanaged Switch (servethehome.com)
+        </p>
+        <p class="publishertime">by comeupwith23 3 hours ago</p>
+      </div>
+      <div class="comments">
+        <p class="numcomments">14&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="post">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">90</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">VirtualBox 7.0 Released - New Direct3D Acceleration (virtualbox.org)
+        </p>
+        <p class="publishertime">by ormaybemore17 4 hours ago</p>
+      </div>
+      <div class="comments">
+        <p class="numcomments">24&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="post">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">79</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">Ray Tracing in Notepad.exe at 30 FPS (2020) (kylehalladay.com)
+        </p>
+        <p class="publishertime">by thisguyagain2 14 hours ago</p>
+      </div>
+      <div class="comments">
+        <p class="numcomments">11&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="post">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">98</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">ReadMe (YC W15) is hiring a product manager who loves APIs 
+        </p>
+        <p class="publishertime">by bluesdog1451 12 hours ago</p>
+      </div>
+      <div class="comments">
+        <p class="numcomments">53&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="post">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">26</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">Emulation on the M1 iPad Air [video] (youtube.com)
+        </p>
+        <p class="publishertime">by jazzcat251 5 hours ago</p>
+      </div>
+      <div class="comments">
+        <p class="numcomments">71&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="post">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">82</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">Blogless - Writing articles online without a blog (2021) (datenbrei.de)
+        </p>
+        <p class="publishertime">by meowww 14 hours ago</p>
+      </div>
+      <div class="comments">
+        <p class="numcomments">76&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="post">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">76</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">Show HN: Linkidex - save and sort the URLs you care about (linkidex.com)
+        </p>
+        <p class="publishertime">by woofwoof 15 hours ago</p>
+      </div>
+      <div class="comments">
+        <p class="numcomments">87&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="post">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">94</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">Show HN: Linkidex - save and sort the URLs you care about (linkidex.com)
+        </p>
+        <p class="publishertime">by cooldog12782 9 hours ago</p>
+      </div>
+      <div class="comments">
+        <p class="numcomments">21&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="post">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">57</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">ReadMe (YC W15) is hiring a product manager who loves APIs (readme.com)
+        </p>
+        <p class="publishertime">by bigbody67 8 hours ago</p>
+      </div>
+      <div class="comments">
+        <p class="numcomments">52&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="post">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">63</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">The Little Spaceplane That Couldn't (2008) (space-travel.com)
+        </p>
+        <p class="publishertime">by coolgal 7 hours ago</p>
+      </div>
+      <div class="comments">
+        <p class="numcomments">71&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="post">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">81</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">Expectations of professional software engineers (adamj.eu)
+        </p>
+        <p class="publishertime">by waitwhatdid21 5 hours ago</p>
+      </div>
+      <div class="comments">
+        <p class="numcomments">62&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="post">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">41</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">I made a guitar tuner app using Flutter and Rust (justune.eu)
+        </p>
+        <p class="publishertime">by 123456789 1 hour ago</p>
+      </div>
+      <div class="comments">
+        <p class="numcomments">87&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="post">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">32</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">Energy vs. Sovereign Bond Markets (lynalden.com)
+        </p>
+        <p class="publishertime">by noway 2 hours ago</p>
+      </div>
+      <div class="comments">
+        <p class="numcomments">100&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="post">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">42</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">Halfix - A portable x86 emulator written in C99 (github.com/nepx)
+        </p>
+        <p class="publishertime">by youjustsaid 20 hours ago</p>
+      </div>
+      <div class="comments">
+        <p class="numcomments">62&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="post">
+      <div class="upvotes">
+        <img class="upvotebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="upvote"/>
+        <p class="numupvotes">42</p>
+      </div>
+      <div class="listingname">
+        <p class="listingtitle">Show HN: I built a site that finds the cheapest place to buy a book (pagesonpages.com)
+        </p>
+        <p class="publishertime">by idk17 6 hours ago</p>
+      </div>
+      <div class="comments">
+        <p class="numcomments">322&nbsp</p>
+        <img class="commenticon" src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-32.png" alt="comments"/>
+      </div>
+    </div>
+    <div class="nextpage">
+      <p class="more">More</p>
+      <img class="morebutton" src="https://freepngimg.com/thumb/triangle/28349-4-triangle-transparent.png" alt="next page"/>
+    </div>
+    <div class="footer">
+      <p id="appisopen">Applications are open for YC Winter 2023</p>
+      <div class="navbar">
+        <ul id="footerlist">
+          <li><a id="section2" href="#two">Guidelines</a></li>
+          <img class="dividers" src="https://www.pngall.com/wp-content/uploads/5/Vertical-Line-PNG-High-Quality-Image.png" alt="divider"/>
+          <li><a id="section3" href="#three">FAQ</a></li>
+          <img class="dividers" src="https://www.pngall.com/wp-content/uploads/5/Vertical-Line-PNG-High-Quality-Image.png" alt="divider"/>
+          <li><a id="section4" href="#four">Lists</a></li>
+          <img class="dividers" src="https://www.pngall.com/wp-content/uploads/5/Vertical-Line-PNG-High-Quality-Image.png" alt="divider"/>
+          <li><a id="section5" href="#five">API</a></li>
+          <img class="dividers" src="https://www.pngall.com/wp-content/uploads/5/Vertical-Line-PNG-High-Quality-Image.png" alt="divider"/>
+          <li><a id="section6" href="#six">Security</a></li>
+          <img class="dividers" src="https://www.pngall.com/wp-content/uploads/5/Vertical-Line-PNG-High-Quality-Image.png" alt="divider"/>
+          <li><a id="section7" href="#seven">Legal</a></li>
+          <img class="dividers" src="https://www.pngall.com/wp-content/uploads/5/Vertical-Line-PNG-High-Quality-Image.png" alt="divider"/>
+          <li><a id="section7" href="#seven">Apply to YC</a></li>
+          <img class="dividers" src="https://www.pngall.com/wp-content/uploads/5/Vertical-Line-PNG-High-Quality-Image.png" alt="divider"/>
+          <li><a id="section8" href="#eight">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="navtop">
+        <input type="text" placeholder="Search..">
+      </div>
+    </div>
+  </body>
+
+</html>
